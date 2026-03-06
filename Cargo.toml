@@ -1,6 +1,6 @@
 [package]
 name = "dsplce-co-multi-progressbar"
-version = "0.1.0"
+version = "0.1.0-polishes"
 edition = "2021"
 description = "This is a fork of https://crates.io/crates/multi-progressbar, go to the original repository if you want to use as a dep"
 license = "Apache-2.0"
