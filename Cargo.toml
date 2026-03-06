@@ -1,14 +1,9 @@
 [package]
-name = "multi-progressbar"
+name = "dsplce-co-multi-progressbar"
 version = "0.1.0"
 edition = "2021"
-
-authors = ["eternal-flame-AD"]
-description = "A library for displaying multiple progress bars in the terminal designed to not stand in your way."
+description = "This is a fork of https://crates.io/crates/multi-progressbar, go to the original repository if you want to use as a dep"
 license = "Apache-2.0"
-repository = "https://github.com/eternal-flame-AD/multi-progressbar"
-keywords = ["progress", "progress-bar", "tui"]
-readme = "README.md"
 
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
