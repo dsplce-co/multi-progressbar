@@ -1,4 +1,4 @@
-use crate::{ProgressBar, TaskProgress};
+use crate::{visual_len, ProgressBar, TaskProgress};
 
 /// ClassicProgressBar is a classic progress bar, using `[=> ]` to show progress.
 pub struct ClassicProgressBar<T: TaskProgress> {
@@ -30,8 +30,8 @@ where
             return " ".repeat(width);
         }
 
-        let before_len = before.as_ref().map(|s| s.len()).unwrap_or(0);
-        let after_len = after.as_ref().map(|s| s.len()).unwrap_or(0);
+        let before_len = before.as_ref().map(|s| visual_len(s)).unwrap_or(0);
+        let after_len = after.as_ref().map(|s| visual_len(s)).unwrap_or(0);
 
         // check if we have enough space to show progress bar
         if before_len + after_len + 2 > width {
